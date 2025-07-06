@@ -102,3 +102,5 @@ export default class Main {
       });
   }
 }
+const main = new Main();
+main.render().then(() => console.log("App started!"));
