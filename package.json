@@ -27,6 +27,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.1.0",
+    "css-loader": "^7.1.2",
     "eslint": "^5.16.0",
     "eslint-plugin-import": "^2.18.2",
     "gh-pages": "^6.3.0",
@@ -39,6 +40,7 @@
     "karma-jasmine": "^2.0.1",
     "karma-mocha-reporter": "git+https://github.com/javascriptru/karma-mocha-reporter.git",
     "karma-viewport": "^1.0.6",
+    "style-loader": "^4.0.0",
     "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1"
   },
