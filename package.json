@@ -8,7 +8,8 @@
   },
   "type": "module",
   "scripts": {
-    "deploy": "gh-pages -d dist",
+    "build": "webpack",
+    "deploy": "npm run build && git add . && git commit -m 'Build for deploy' && git push",
     "test": "npm run karma",
     "karma": "karma start karma.conf.js",
     "lint": "eslint \"./*-module/**/*.js\"",
