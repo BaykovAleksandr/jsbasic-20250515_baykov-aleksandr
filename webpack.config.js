@@ -9,7 +9,7 @@ export default {
   entry: "./9-module/2-task/index.js",
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "docs"),
   },
   module: {
     rules: [
