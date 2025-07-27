@@ -9,14 +9,7 @@
   <link rel="stylesheet" href="../../assets/styles/common.css" />
   <link rel="stylesheet" href="./all.css">
 
-  <script type="module">
-    import Main from './index.js';
 
-    let main = new Main();
-
-    main.render()
-      .then(() => console.log('Страница готова!'));
-  </script>
 </head>
 
 <body>
@@ -90,6 +83,16 @@
       </div>
     </div>
   </main>
+  <script type="module">
+    import Main from './index.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      let main = new Main();
+      main.render()
+        .then(() => console.log('Страница готова!'))
+        .catch(error => console.error('Ошибка инициализации:', error));
+    });
+  </script>
 </body>
 
 </html>
