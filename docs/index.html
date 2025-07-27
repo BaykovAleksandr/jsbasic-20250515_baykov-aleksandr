@@ -4,8 +4,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <base href="/jsbasic-20250515_baykov-aleksandr/">
+  <!-- <base href="/jsbasic-20250515_baykov-aleksandr/"> -->
   <title>Бангкок Экспресс</title>
+
+   <script>
+    // Определяем базовый путь автоматически
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    const repoName = 'jsbasic-20250515_baykov-aleksandr';
+    const baseHref = isGitHubPages ? `/${repoName}/` : '/';
+    
+    const base = document.createElement('base');
+    base.href = baseHref;
+    document.head.prepend(base);
+  </script>
 
   <link rel="stylesheet" href="assets/styles/common.css" />
   <link rel="stylesheet" href="./all.css">
